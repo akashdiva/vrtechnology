@@ -37,21 +37,33 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
-        <div className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
+       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div className="text-center lg:text-left">
+ 
+
           <div className="inline-flex items-center space-x-2 px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-[10px] sm:text-xs font-black mb-8 animate-pulse tracking-wider">
             <span className="w-2 h-2 rounded-full bg-blue-500"></span>
             <span className="uppercase">Engineering Excellence Since Inception</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.05] mb-10 tracking-tighter">
-            Dry Cooling & <br /><span className="text-blue-500">Heat Exchange</span>
+          <h1 className="text-3xl sm:text-6xl md:text-3xl lg:text-7xl font-black text-white leading-[1.05] mb-10 tracking-tighter">
+            Dry Cooling & <br /><span className="text-blue-500">Heat Exchange Service</span>
           </h1>
+
           <p className="text-base sm:text-xl text-slate-300 mb-14 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
             VR Technology delivers comprehensive ME&I services to the global energy sector.
             We specialize in ACHE, AFC, and ACC systems lifecycle management with a
             <span className="text-blue-400 font-bold italic"> "Right First Time"</span> approach.
           </p>
+          </div>
+          <img
+      src="/dry-cooling.jpg"
+      alt="Dry Cooling Heat Exchange"
+      className="w-full max-w-lg rounded-2xl shadow-2xl object-cover"
+    />
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-5 mb-20">
+           
+  
             <a
               href="#services"
               onClick={(e) => handleScrollTo(e, 'services')}
@@ -70,9 +82,9 @@ const Hero: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-12 border-t border-white/10">
             {[
-              { text: "ASME Certified", icon: <CheckCircle2 className="w-5 h-5 text-blue-500" /> },
-              { text: "24/7 Field Support", icon: <CheckCircle2 className="w-5 h-5 text-blue-500" /> },
-              { text: "Pan-India Reach", icon: <CheckCircle2 className="w-5 h-5 text-blue-500" /> }
+              { text: "ISO CERTIFIED", icon: <CheckCircle2 className="w-5 h-5 text-blue-500" /> },
+              { text: "24/7 FIELD SUPPORT", icon: <CheckCircle2 className="w-5 h-5 text-blue-500" /> },
+              { text: "PAN-INDIA & GLOBAL REACH", icon: <CheckCircle2 className="w-5 h-5 text-blue-500" /> }
             ].map((item, idx) => (
               <div key={idx} className="flex items-center justify-center lg:justify-start space-x-3">
                 <div className="p-1 bg-blue-500/10 rounded-full">{item.icon}</div>
@@ -80,7 +92,9 @@ const Hero: React.FC = () => {
               </div>
             ))}
           </div>
+          
         </div>
+        
       </div>
     </section>
   );

@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <div className="flex items-center space-x-3">
-              <img src="/logo-icon.png" alt="VR Technology Logo" className="h-10 md:h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300" />
+              <img src="/new-logo.png" alt="VR Technology Logo" className="h-10 md:h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300" />
               <span className="text-xl md:text-2xl font-black tracking-tight leading-none text-white uppercase">VR Technology</span>
             </div>
           </div>

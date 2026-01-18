@@ -32,13 +32,13 @@ export const CORE_SERVICES: ServiceItem[] = [
     title: 'Dry Cooling Solutions',
     description: 'Specializing in ACHE, AFC, FFC, and ACC systems with high thermal performance and energy efficiency.',
     icon: <Wind className="w-8 h-8 text-blue-500" />,
-    tags: ['ACHE', 'AFC', 'ACC', 'APH']
+    tags: ['AIR COOLED HEAT EXCHANGER', 'AIR FIN COOLER', 'FIN FAN COOLER', 'AIR COOLED CONDENSER','AIR PRE HEATERS']
   },
   {
     title: 'Projects & Field Services',
-    description: 'End-to-end site services from modular assembly to lifecycle support and turnaround management.',
+    description: 'End-to-end EPC solutions including design support modular assembly, subcontracting services on-site fabrication , and installation of Dry Cooling Heat Exchangers (ACHE, APH, and ACC).',
     icon: <Settings className="w-8 h-8 text-blue-500" />,
-    tags: ['Installation', 'Commissioning', 'Shutdowns']
+    tags: ['DESIGN SUPPORT', 'PROJECT MANAGEMENT', 'INSTALLATION','COMMISSIONING','SHUTDOWNS']
   },
   {
     title: 'Maintenance & Overhauls',
@@ -56,13 +56,13 @@ export const CORE_SERVICES: ServiceItem[] = [
     title: 'Inspection & Testing',
     description: 'Comprehensive NDT services (RT, UT, MPT, DPT) to ASNT Level II standards for asset integrity.',
     icon: <ShieldCheck className="w-8 h-8 text-blue-500" />,
-    tags: ['NDT', 'QA/QC', 'Compliance']
+    tags: ['NDT', 'ASNT LEVEL II', 'ASSET INTEGRITY']
   },
   {
-    title: 'Spare Parts Supply',
-    description: 'Original and OEM-equivalent components ensuring system compatibility and long service life.',
+    title: 'OEM Spares',
+    description: 'Comprehensive supply of OEM and OEM-equivalent components ensuring system compatibility and long service life.',
     icon: <Package className="w-8 h-8 text-blue-500" />,
-    tags: ['Fan Hubs', 'Belts', 'Bearings', 'Pulleys']
+    tags: ['TUBEBUNDLE PLUGS & GASKETS','FAN HUBS,BLADES & ACCESSORIES','V & TIMING PULLEYS','V & TIMING BELTS','BEARINGS','LOUVER SPARES', 'HALF-TUBE SUPPORTS','FIN COMPONENTS','INSTRUMENTS','FASTENERS']
   }
 ];
 
