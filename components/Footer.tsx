@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <img src="/logo-icon.png" alt="VR Technology Logo" className="h-8 w-auto object-contain" />
+              <img src="/new-logo.png" alt="VR Technology Logo" className="h-8 w-auto object-contain" />
               <span className="text-xl font-bold text-white tracking-tight">VR Technology</span>
             </div>
             <p className="text-sm leading-relaxed text-slate-400">

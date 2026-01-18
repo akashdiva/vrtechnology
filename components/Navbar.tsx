@@ -53,12 +53,29 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="flex items-center space-x-3">
-              <img src="/new-logo.png" alt="VR Technology Logo" className="h-10 md:h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-xl md:text-2xl font-black tracking-tight leading-none text-white uppercase">VR Technology</span>
-            </div>
-          </div>
+       <div
+  className="flex items-center group cursor-pointer"
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
+  <div className="flex items-center space-x-3">
+    <img
+      src="/new-logo.png"
+      alt="VR Technology Logo"
+      className="h-10 md:h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+    />
+
+    {/* Text */}
+    <div className="flex flex-col leading-tight">
+      <span className="text-xl md:text-2xl font-black tracking-tight text-blue-500 uppercase">
+        VR TECHNOLOGY
+      </span>
+      <span className="text-xs md:text-sm text-slate-400 font-medium tracking-wide">
+        Industrial Supply &amp; Field Services
+      </span>
+    </div>
+  </div>
+</div>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
