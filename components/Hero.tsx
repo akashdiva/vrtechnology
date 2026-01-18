@@ -37,14 +37,11 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
-       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div className="text-center lg:text-left">
  
 
-          <div className="inline-flex items-center space-x-2 px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-[10px] sm:text-xs font-black mb-8 animate-pulse tracking-wider">
-            <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-            <span className="uppercase">Engineering Excellence Since Inception</span>
-          </div>
+         
           <h1 className="text-3xl sm:text-6xl md:text-3xl lg:text-7xl font-black text-white leading-[1.05] mb-10 tracking-tighter">
             Dry Cooling & <br /><span className="text-blue-500">Heat Exchange Service</span>
           </h1>
@@ -55,11 +52,12 @@ const Hero: React.FC = () => {
             <span className="text-blue-400 font-bold italic"> "Right First Time"</span> approach.
           </p>
           </div>
-          <img
-      src="/dry-cooling.jpg"
-      alt="Dry Cooling Heat Exchange"
-      className="w-full max-w-lg rounded-2xl shadow-2xl object-cover"
-    />
+     <img
+  src="/dry-cooling.jpg"
+  alt="Dry Cooling Heat Exchange"
+  className="w-full max-w-md rounded-2xl shadow-2xl object-cover"
+/>
+
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-5 mb-20">
            

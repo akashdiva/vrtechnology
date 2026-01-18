@@ -133,19 +133,19 @@ const App: React.FC = () => {
             <div className="lg:w-1/2 grid grid-cols-2 gap-4 sm:gap-8">
               <div className="space-y-4 sm:space-y-8">
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                  <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600" alt="Mechanical Work" className="w-full h-64 sm:h-80 object-cover" />
+                  <img src="second.jpeg" alt="Mechanical Work" className="w-full h-64 sm:h-80 object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 </div>
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" alt="Engineering" className="w-full h-40 sm:h-48 object-cover" />
+                  <img src="crane.jpeg" alt="Engineering" className="w-full h-40 sm:h-48 object-cover" />
                 </div>
               </div>
               <div className="space-y-4 sm:space-y-8 pt-12 sm:pt-20">
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=600" alt="Piping" className="w-full h-40 sm:h-48 object-cover" />
+                  <img src="closed-loop.jpg" alt="Piping" className="w-full h-40 sm:h-48 object-cover" />
                 </div>
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                  <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&q=80&w=600" alt="Industrial Facility" className="w-full h-64 sm:h-80 object-cover" />
+                  <img src="first.jpeg" alt="Industrial Facility" className="w-full h-64 sm:h-80 object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 </div>
               </div>
@@ -155,31 +155,53 @@ const App: React.FC = () => {
       </section>
 
       {/* Allied Services Section */}
-      <section id="allied" className="py-32 bg-slate-900 text-white relative overflow-hidden scroll-mt-20">
-        <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-blue-600/10 rounded-full blur-[120px] -mr-80 -mt-80"></div>
-        <div className="absolute bottom-0 left-0 w-[40rem] h-[40rem] bg-red-600/10 rounded-full blur-[120px] -ml-80 -mb-80"></div>
+     <section
+  id="allied"
+  className="py-32 bg-slate-900 text-white relative overflow-hidden scroll-mt-20"
+>
+  <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-blue-600/10 rounded-full blur-[120px] -mr-80 -mt-80" />
+  <div className="absolute bottom-0 left-0 w-[40rem] h-[40rem] bg-red-600/10 rounded-full blur-[120px] -ml-80 -mb-80" />
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <SectionHeader
-            light
-            centered
-            subtitle="Industrial Fabrications"
-            title="Allied Engineering Services"
-            description="Our specialized fabrication unit handles complex industrial projects with precision engineering and high-grade materials."
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {ALLIED_SERVICES.map((service, idx) => (
-              <div key={idx} className="bg-white/5 border border-white/10 backdrop-blur-sm p-8 sm:p-10 rounded-[2.5rem] hover:bg-white/10 transition-all group relative overflow-hidden">
-                <div className="bg-blue-600/20 text-blue-400 p-4 rounded-2xl w-fit mb-8 group-hover:bg-blue-500 group-hover:text-slate-900 transition-all">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-4 tracking-tight">{service.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">{service.desc}</p>
-              </div>
-            ))}
+  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <SectionHeader
+      light
+      centered
+      subtitle="Industrial Fabrications"
+      title="Allied Engineering Services"
+      description="Our specialized fabrication unit handles complex industrial projects with precision engineering and high-grade materials."
+    />
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      {ALLIED_SERVICES.map((service, idx) => (
+        <div
+          key={idx}
+          className="group relative rounded-[2.5rem] overflow-hidden bg-slate-800 border border-white/10 hover:border-white/20 transition-all"
+        >
+          {/* Image */}
+          <div className="relative h-[260px]">
+            <img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-slate-900" />
+          </div>
+
+          {/* Content */}
+          <div className="p-8">
+            <h3 className="text-xl font-semibold mb-4">
+              {service.title}
+            </h3>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              {service.desc}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <div className="scroll-mt-20">
         <Gallery />

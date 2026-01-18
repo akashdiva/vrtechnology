@@ -30,7 +30,7 @@ export const NAV_LINKS: NavItem[] = [
 export const CORE_SERVICES: ServiceItem[] = [
   {
     title: 'Dry Cooling Solutions',
-    description: 'Specializing in ACHE, AFC, FFC, and ACC systems with high thermal performance and energy efficiency.',
+    description: 'Specializing in ACHE, AFC, FFC,ACC and APH systems with high thermal performance and energy efficiency.',
     icon: <Wind className="w-8 h-8 text-blue-500" />,
     tags: ['AIR COOLED HEAT EXCHANGER', 'AIR FIN COOLER', 'FIN FAN COOLER', 'AIR COOLED CONDENSER','AIR PRE HEATERS']
   },
@@ -67,26 +67,51 @@ export const CORE_SERVICES: ServiceItem[] = [
 ];
 
 export const INDUSTRIES = [
-  { name: 'Oil & Gas', image: 'https://picsum.photos/seed/oil/800/600' },
-  { name: 'Refinery', image: 'https://picsum.photos/seed/refinery/800/600' },
-  { name: 'Petrochemical', image: 'https://picsum.photos/seed/petro/800/600' },
-  { name: 'Steel Plants', image: 'https://picsum.photos/seed/steel/800/600' },
-  { name: 'Power Sector', image: 'https://picsum.photos/seed/power/800/600' },
-  { name: 'LNG Terminals', image: 'https://picsum.photos/seed/lng/800/600' },
+  { name: 'Oil & Gas', image: '/oil-gas.jpg' },
+  { name: 'Refinery', image: '/Refinery-plant.jpg' },
+  { name: 'Petrochemical', image: '/petrochemical.jpg' },
+  { name: 'Steel Plants', image: '/steelplants.jpg' },
+  { name: 'Power Sector', image: '/power-sector.jpg' },
+  { name: 'LNG Terminals', image: '/building.jpg' },
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
-  { title: 'Air Cooler Tube Bundles', category: 'Products', imageUrl: 'https://picsum.photos/seed/gallery1/600/400' },
-  { title: 'Fin Fan Coolers Installation', category: 'Field Works', imageUrl: 'https://picsum.photos/seed/gallery2/600/400' },
-  { title: 'ACHE Maintenance', category: 'Maintenance', imageUrl: 'https://picsum.photos/seed/gallery3/600/400' },
-  { title: 'Rotating Equipment Alignment', category: 'Technical', imageUrl: 'https://picsum.photos/seed/gallery4/600/400' },
-  { title: 'PEB Steel Fabrication', category: 'Allied', imageUrl: 'https://picsum.photos/seed/gallery5/600/400' },
-  { title: 'Bellow Expansion Joints', category: 'Fabrication', imageUrl: 'https://picsum.photos/seed/gallery6/600/400' },
+  { title: 'Forced Draft Air Fin Cooler', category: 'DRY COOLING', imageUrl: 'fourth.jpeg' },
+  { title: 'Induced Draft Air Fin Cooler', category: 'DRY COOLING', imageUrl: 'air-fin.jpg' },
+  { title: 'Offshore Air Fin Cooler', category: 'DRY COOLING', imageUrl: 'offshore.jpg' },
+  { title: 'Steel Plant Fin Fan Cooler', category: 'DRY COOLING', imageUrl: 'first.jpeg' },
+  { title: 'Engine Air Cooler', category: 'DRY COOLING', imageUrl: 'third.jpeg' },
+  { title: 'Closed Loop Air Cooler', category: 'DRY COOLING', imageUrl: 'closed-loop.jpg' },
+      { title: 'Rotating Equipment Maintenance', category: 'MAINTENANCE', imageUrl: 'rotating-equipment.jpeg' },
+       { title: 'Motor & Gearbox Overhaul', category:'MAINTENANCE' , imageUrl: 'motor.jpeg' },
+        { title: 'Fan Assembly work', category:'MAINTENANCE' , imageUrl: 'fan-assembly.jpeg' },
+        { title: 'NDT Inspection Services', category: 'INSPECTION', imageUrl: 'ndt-inspection.jpeg' },
+        { title: 'Quality Testing', category:'INSPECTION' , imageUrl: 'quality-testing.jpeg' },
+        { title:'Asset Integrity Check', category: 'INSPECTION', imageUrl: 'asset-integrity.jpeg' },
+        { title:'PEB Godown Structure', category: 'STRUCTURAL STEEL', imageUrl: '/steel.jpg' },
+        { title:'PEB Office Building', category: 'STRUCTURAL STEEL', imageUrl: '/building.jpg' },
+        { title:'Industrial shed', category: 'STRUCTURAL STEEL', imageUrl: '/shed.jpg' },
 ];
 
 export const ALLIED_SERVICES = [
-  { title: 'Heavy Fabrication', desc: 'Bellow Expansion Joints (CS/SS), Pressure Parts, and Skid Modules.', icon: <Factory className="w-6 h-6" /> },
-  { title: 'Structural Steel', desc: 'PEB solutions for warehouses and factories with customized engineering.', icon: <Zap className="w-6 h-6" /> },
-  { title: 'Piping Works', desc: 'High-pressure piping modifications and fire-fighting system installation.', icon: <Droplets className="w-6 h-6" /> },
-  { title: 'Technical Staffing', desc: 'Specialized supply of ACHE Engineers, fitters, and certified welders.', icon: <Users className="w-6 h-6" /> },
+  {
+    title: "Industrial Fabrications",
+    desc: "Expertise in fabrication of bellow Expansion Joints (CS/SS),pressure parts,skid modules,and all types of equipment.",
+    image: "/fan-assembly.jpeg",
+  },
+  {
+    title: "Structural Steel",
+    desc: "All kinds of steel structural works and PEB solutions for warehouses and factories with customized engineering. Expertise in all kinds of industrial shed sheeting works.",
+    image: "/steel.jpg",
+  },
+  {
+    title: "Piping Works",
+    desc: "All kinds of piping works, including high-pressure piping modifications and fire-fighting system installation.",
+    image: "/motor.jpeg",
+  },
+  {
+    title: "Technical Staffing & Manpower Supply",
+    desc: "Specialized supply AFC/ACC field engineers, Supervisors, Fabricators, Millwrights, Stuctural fitters, and skilled Welders (TTS,TIG, MIG, SAW,and ARC), Grinders, Riggers and Helpers.",
+    image: "/staff.jpeg",
+  },
 ];

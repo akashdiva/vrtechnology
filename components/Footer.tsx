@@ -46,15 +46,18 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span>Pan-India Service Reach<br />24/7 Operations</span>
+               <span>D.NO.5/205,Newtown,podanur,<br />Coimbatore-641023,<br />Tamil Nadu ,India<br />,24/7 Operations</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <a href="mailto:services@vrtechnology.in" className="hover:text-white">services@vrtechnology.in</a>
+                <a href="mailto:services@vrtechnology.in" className="hover:text-white">sales@vrtechnology.in,<br />shumugavelk@vrtechnology.in,<br />info@vrtechnology.in</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span>Request a callback</span>
+                <span>+91 9952934312, +91 9500062047</span>
+              </li>
+              <li>
+                <span>    GST No:   33CFJPS3737Q1Z0.</span>
               </li>
             </ul>
           </div>
